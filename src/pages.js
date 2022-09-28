@@ -29,4 +29,23 @@ function createInitialPage() {
   return wrapper;
 }
 
-export { createInitialPage };
+function createHomePage() {
+  const home = document.createElement("div");
+  home.innerText = "This is the Home Page";
+  return home;
+}
+
+function createMenuPage() {
+  const menu = document.createElement("div");
+  menu.innerText = "This is the menu Page";
+  return menu;
+}
+
+function createContactPage() {
+  const contact = document.createElement("div");
+  contact.innerText = "This is the contact Page";
+  return contact;
+
+}
+
+export { createInitialPage, createHomePage, createMenuPage, createContactPage };
